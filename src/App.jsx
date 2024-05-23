@@ -1,10 +1,23 @@
-import React from 'react'
+import React, { Profiler } from 'react'
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import Home from './pages/Home'
+import Signin from './pages/Signin'
+import Signup from './pages/Signup'
+import About from './pages/About'
+import Prrofile from './pages/Prrofile'
+
 
 function App() {
   return (
-    <div>
-      <h1>App</h1>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/sign-in' element={<Signin/>}/>
+      <Route path='/sign-up' element={<Signup/>}/>
+      <Route path='/about' element={<About/>}/>
+      <Route path='/profile' element={<Prrofile/>}/>
+    </Routes>
+    </BrowserRouter>
   )
 }
 
