@@ -31,7 +31,7 @@ export default function Signup() {
     }
     setLoading(false);
     setError(null);
-    navigate('sign-in');
+    navigate('/sign-in');
     }catch(err){
       setLoading(false);
       setError(err.message);
@@ -48,7 +48,7 @@ export default function Signup() {
       <input type='password' placeholder='password' className='border p-3 rounded-lg' id='password' onChange={handleChange}/>
       <button disabled={loading} className='bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-95 disabled:80'>{loading?'Loading...':'Sign Up'}</button>
     </form>
-    <div className='felx gap-2 mt-5'>
+    <div className='flex gap-2 mt-5'>
       <p>Have an account?</p>
       <Link to={"/sign-in"}>
         <span className='text-blue-700'>Sign in</span>
