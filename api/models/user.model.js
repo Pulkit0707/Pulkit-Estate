@@ -14,6 +14,10 @@ const userSchema= new mongoose.Schema({
     password:{
         type: String,
         required: true,
+    },
+    avatar:{
+        type: String,
+        default: "https://media.licdn.com/dms/image/C5612AQF70HvzppDt1w/article-cover_image-shrink_600_2000/0/1520107923702?e=2147483647&v=beta&t=2JHE2pobPcl8RsZh_ULjEfgMSiEKsTGus2mgbViZCVg"
     }
 },{timestamps:true});
 
