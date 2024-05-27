@@ -7,6 +7,7 @@ import About from './pages/About'
 import Prrofile from './pages/Prrofile'
 import Header from './components/Header'
 import PrivateRoute from './components/PrivateRoute'
+import CreateListing from './pages/CreateListing'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Route path='/about' element={<About/>}/>
       <Route element={<PrivateRoute/>}>
       <Route path='/profile' element={<Prrofile/>}/>
+      <Route path='/create-listing' element={<CreateListing/>}></Route>
       </Route>
     </Routes>
     </BrowserRouter>
